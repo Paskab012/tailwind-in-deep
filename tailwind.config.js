@@ -16,7 +16,6 @@ module.exports = {
         darkGrayishBlue: '#4F5665',
         borderColors: '#DDDDDD',
         titleColor: '#0B132A',
-        textColor: '#4F5665',
       },
 
       dropShadow: {

@@ -4,7 +4,353 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tailwindcss in deep</title>
+    <link rel="stylesheet" href="/src/styles/index.css" />
+    <title>apple clone</title>
   </head>
-  <body></body>
+  <body>
+    <header
+      class=" max-w-screen-xl mx-auto sticky top-0 backdrop-blur-lg bg-black/80"
+    >
+      <div class="px-4 mx-auto w-4/5 sm:px-6 lg:px-8 sticky top-0">
+        <div class="flex items-center justify-between h-16">
+          <div class="md:flex md:items-center md:gap-12">
+            <img src="/src/assets/apple.png" class="w-6 h-6" alt="apple logo" />
+          </div>
+
+          <div class="hidden md:block">
+            <nav aria-labelledby="header-navigation">
+              <ul class="flex items-center text-sm gap-6">
+                <li>
+                  <a
+                    class="text-[#fbfbfd] transition hover:text-white/75"
+                    href="/"
+                  >
+                    Store
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    class="text-[#fbfbfd] transition hover:text-white/75"
+                    href="/"
+                  >
+                    Mac
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    class="text-[#fbfbfd] transition hover:text-white/75"
+                    href="/"
+                  >
+                    iPad
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    class="text-[#fbfbfd] transition hover:text-white/75"
+                    href="/"
+                  >
+                    iPhone
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    class="text-[#fbfbfd] transition hover:text-white/75"
+                    href="/"
+                  >
+                    Watch
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    class="text-[#fbfbfd] transition hover:text-white/75"
+                    href="/"
+                  >
+                    AirPods
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="text-[#fbfbfd] transition hover:text-white/75"
+                    href="/"
+                  >
+                    TV & Home
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="text-[#fbfbfd] transition hover:text-white/75"
+                    href="/"
+                  >
+                    Only on Apple
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="text-[#fbfbfd] transition hover:text-white/75"
+                    href="/"
+                  >
+                    Accessoires
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="text-[#fbfbfd] transition hover:text-white/75"
+                    href="/"
+                  >
+                    Support
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="flex items-center gap-4">
+            <div class="sm:gap-4 sm:flex">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4 text-[#fbfbfd]"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+                />
+              </svg>
+
+              <div class="hidden sm:flex">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-5 h-5 text-[#fbfbfd]"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+                  />
+                </svg>
+              </div>
+            </div>
+
+            <div class="block md:hidden">
+              <button
+                class="p-2 text-gray-600 bg-gray-100 rounded transition hover:text-gray-600/75"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-5 h-5 text-black"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--
+        Features
+    -->
+    <div class="flex flex-col bg-black justify-center">
+      <div
+        class="paragraphe bg-black w-3/4 mx-auto text-center items-center flex flex-col space-y-4"
+      >
+        <h1 class="text-6xl text-[#fbfbfd] font-bold mt-12">
+          iPhone 14 Pro <br /><span class="text-3xl font-normal"
+            >Pro.Beyond.</span
+          >
+        </h1>
+        <div
+          class="flex mx-4 justify-between text-xl text-blue-500 outline-offset-1"
+        >
+          <a href="#" class="hover:underline mx-4 flex items-center">
+            Learn more
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="3"
+              stroke="currentColor"
+              class="w-4 h-4"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M8.25 4.5l7.5 7.5-7.5 7.5"
+              />
+            </svg>
+          </a>
+          <a href="#" class="hover:underline flex items-center">
+            Buy
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="3"
+              stroke="currentColor"
+              class="w-4 h-4"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M8.25 4.5l7.5 7.5-7.5 7.5"
+              />
+            </svg>
+          </a>
+        </div>
+        <img
+          src="src/assets/iphone.jpeg"
+          alt="iphone background"
+          class="w-4/5 h-[380px] object-cover object-top"
+        />
+      </div>
+    </div>
+
+    <!--
+        Features
+    -->
+    <div class="flex flex-col bg-[#fbfbfd] justify-center">
+      <div
+        class="paragraphe bg-[#fbfbfd] w-3/4 mx-auto text-center items-center flex flex-col space-y-4"
+      >
+        <h1 class="text-6xl text-black font-bold mt-12">
+          iPhone 14 <br /><span class="text-3xl font-normal"
+            >Big and Bigger</span
+          >
+          <br />
+          <span class="text-xl font-normal text-gray-500"
+            >iPhone 14 Plus available starting 10.7</span
+          >
+        </h1>
+        <div
+          class="flex mx-4 justify-between text-xl text-blue-500 outline-offset-1"
+        >
+          <a href="#" class="hover:underline mx-4 flex items-center">
+            Learn more
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="3"
+              stroke="currentColor"
+              class="w-4 h-4"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M8.25 4.5l7.5 7.5-7.5 7.5"
+              />
+            </svg>
+          </a>
+          <a href="#" class="hover:underline flex items-center">
+            Shop
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="3"
+              stroke="currentColor"
+              class="w-4 h-4"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M8.25 4.5l7.5 7.5-7.5 7.5"
+              />
+            </svg>
+          </a>
+        </div>
+        <img
+          src="https://ichef.bbci.co.uk/news/976/cpsprodpb/3267/production/_126630921_apple-iphone-14-iphone-14-plus-hero-220907-geo.jpg.webp"
+          alt="iphone background"
+          class="w-4/5 h-[420px] object-cover object-top"
+        />
+      </div>
+    </div>
+
+    <!--
+        Features
+    -->
+    <div class="flex flex-col bg-black justify-center">
+      <div
+        class="paragraphe bg-black w-3/4 mx-auto text-center items-center flex flex-col space-y-4"
+      >
+        <h1 class="text-5xl text-[#fbfbfd] font-bold mt-12">
+          WATCH <br /><span class="text-2xl font-normal uppercase text-red-600"
+            >Serie 8</span
+          >
+          <br /><span class="text-3xl font-normal text-[#fbfbfd]"
+            >A healthy leap ahead.</span
+          >
+        </h1>
+        <div
+          class="flex mx-4 justify-between text-xl text-blue-500 outline-offset-1"
+        >
+          <a href="#" class="hover:underline mx-4 flex items-center">
+            Learn more
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="3"
+              stroke="currentColor"
+              class="w-4 h-4"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M8.25 4.5l7.5 7.5-7.5 7.5"
+              />
+            </svg>
+          </a>
+          <a href="#" class="hover:underline flex items-center">
+            Buy
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="3"
+              stroke="currentColor"
+              class="w-4 h-4"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M8.25 4.5l7.5 7.5-7.5 7.5"
+              />
+            </svg>
+          </a>
+        </div>
+        <img
+          src="https://www.apple.com/v/apple-watch-series-8/a/images/overview/hero/hero_static__c9d1bk9frtua_large_2x.jpg"
+          alt="iphone background"
+          class="w-1/2 h-[320px] object-cover object-top"
+        />
+      </div>
+    </div>
+
+    <!--
+          Features
+      -->
+  </body>
 </html>
