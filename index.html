@@ -4,25 +4,32 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/src/assets/apple.png" />
     <link rel="stylesheet" href="/index.css" />
     <title>apple clone</title>
   </head>
   <body>
     <header
-      class="sticky top-0 max-w-screen-xl mx-auto backdrop-blur-lg bg-black/80"
+      class="fixed lg:w-screen top-0 max-w-screen-xl mx-auto backdrop-blur-lg bg-black/80 header"
     >
-      <div class="sticky top-0 w-4/5 px-4 mx-auto sm:px-6 lg:px-8">
-        <div class="flex items-center justify-between h-16">
-          <div class="md:flex md:items-center md:gap-12">
-            <img src="/src/assets/apple.png" class="w-6 h-6" alt="apple logo" />
+      <div
+        class="sticky top-0 w-4/5 px-4 mx-auto sm:px-6 lg:px-8 header-navbar"
+      >
+        <div class="flex items-center justify-between h-12 header-navbar">
+          <div class="md:flex md:items-center md:gap-12 header-navbar__logo">
+            <img
+              src="/src/assets/apple.png"
+              class="w-6 h-6 header-navbar__image"
+              alt="apple logo"
+            />
           </div>
 
-          <div class="hidden md:block">
-            <nav aria-labelledby="header-navigation">
-              <ul class="flex items-center gap-6 text-sm">
-                <li>
+          <div class="hidden md:block main-nav">
+            <nav aria-labelledby="main-nav-section">
+              <ul class="flex items-center gap-9 text-xs main-nav__list">
+                <li class="main-nav__link">
                   <a
-                    class="text-[#fbfbfd] transition hover:text-white/75"
+                    class="text-[#b8b8b8] transition hover:text-white main-nav"
                     href="/"
                   >
                     Store
@@ -31,7 +38,7 @@
 
                 <li>
                   <a
-                    class="text-[#fbfbfd] transition hover:text-white/75"
+                    class="transition text-[#b8b8b8] transition hover:text-white"
                     href="/"
                   >
                     Mac
@@ -40,7 +47,7 @@
 
                 <li>
                   <a
-                    class="text-[#fbfbfd] transition hover:text-white/75"
+                    class="transition text-[#b8b8b8] transition hover:text-white"
                     href="/"
                   >
                     iPad
@@ -49,7 +56,7 @@
 
                 <li>
                   <a
-                    class="text-[#fbfbfd] transition hover:text-white/75"
+                    class="transition text-[#b8b8b8] transition hover:text-white"
                     href="/"
                   >
                     iPhone
@@ -58,7 +65,7 @@
 
                 <li>
                   <a
-                    class="text-[#fbfbfd] transition hover:text-white/75"
+                    class="transition text-[#b8b8b8] transition hover:text-white"
                     href="/"
                   >
                     Watch
@@ -67,7 +74,7 @@
 
                 <li>
                   <a
-                    class="text-[#fbfbfd] transition hover:text-white/75"
+                    class="transition text-[#b8b8b8] transition hover:text-white"
                     href="/"
                   >
                     AirPods
@@ -75,7 +82,7 @@
                 </li>
                 <li>
                   <a
-                    class="text-[#fbfbfd] transition hover:text-white/75"
+                    class="transition text-[#b8b8b8] transition hover:text-white"
                     href="/"
                   >
                     TV & Home
@@ -83,7 +90,7 @@
                 </li>
                 <li>
                   <a
-                    class="text-[#fbfbfd] transition hover:text-white/75"
+                    class="transition text-[#b8b8b8] transition hover:text-white"
                     href="/"
                   >
                     Only on Apple
@@ -91,7 +98,7 @@
                 </li>
                 <li>
                   <a
-                    class="text-[#fbfbfd] transition hover:text-white/75"
+                    class="transition text-[#b8b8b8] transition hover:text-white"
                     href="/"
                   >
                     Accessoires
@@ -99,7 +106,7 @@
                 </li>
                 <li>
                   <a
-                    class="text-[#fbfbfd] transition hover:text-white/75"
+                    class="transition text-[#b8b8b8] transition hover:text-white"
                     href="/"
                   >
                     Support
@@ -175,7 +182,7 @@
       <div
         class="flex flex-col items-center w-3/4 mx-auto space-y-4 text-center bg-black paragraphe"
       >
-        <h1 class="text-6xl text-[#fbfbfd] font-bold mt-12">
+        <h1 class="text-6xl text-[#fbfbfd] font-semibold mt-20">
           iPhone 14 Pro <br /><span class="text-3xl font-normal"
             >Pro.Beyond.</span
           >
@@ -360,17 +367,23 @@
               <div
                 class="flex flex-col items-center w-full mx-auto space-y-4 text-center bg-white paragraphe"
               >
-                <h1 class="mt-12 text-4xl font-semibold text-black">
-                  WATCH <br /><span
-                    class="text-sm font-normal text-red-600 uppercase"
-                    >SE</span
-                  >
-                  <br /><span class="text-xl font-normal text-black"
-                    >A great deal to love</span
-                  >
-                </h1>
+                <div class="flex items-center h-fit">
+                  <img
+                    class="w-7 h-7 mb-1"
+                    src="/src/assets/png.png"
+                    alt="content"
+                  />
+                  <h1 class="text-3xl font-semibold text-black">WATCH</h1>
+                </div>
+                <span class="text-sm font-semibold text-red-600 uppercase -mt-6"
+                  >SE</span
+                >
+                <span class="text-xl font-normal text-black"
+                  >A great deal to love</span
+                >
+
                 <div
-                  class="flex justify-between mx-4 mb-4 text-xl text-blue-500 outline-offset-1"
+                  class="flex justify-between mx-4 mb-4 text-m text-blue-700 outline-offset-1"
                 >
                   <a href="#" class="flex items-center mx-4 hover:underline">
                     Learn more
@@ -378,7 +391,7 @@
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
                       viewBox="0 0 24 24"
-                      stroke-width="3"
+                      stroke-width="2"
                       stroke="currentColor"
                       class="w-4 h-4"
                     >
@@ -395,7 +408,7 @@
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
                       viewBox="0 0 24 24"
-                      stroke-width="3"
+                      stroke-width="2"
                       stroke="currentColor"
                       class="w-4 h-4"
                     >
@@ -409,7 +422,7 @@
                 </div>
               </div>
               <img
-                class="object-cover object-center w-full h-full"
+                class="object-cover object-center w-4/5 h-full items-center mx-auto"
                 src="https://www.apple.com/v/apple-watch-se/i/images/overview/hero/hero__fmx18j9bq0ya_small_2x.jpg"
                 alt="content"
               />
@@ -471,66 +484,6 @@
               <img
                 class="object-cover object-center w-full h-full"
                 src="/src/assets/apwatch.jpeg"
-                alt="content"
-              />
-            </div>
-          </div>
-          <div class="p-4 xl:w-1/4 md:w-1/2">
-            <div class="p-12 bg-white rounded-lg">
-              <div
-                class="flex flex-col items-center w-full mx-auto space-y-4 text-center bg-white paragraphe"
-              >
-                <h1 class="mt-12 text-4xl font-semibold text-black">
-                  WATCH <br /><span
-                    class="text-sm font-normal text-red-600 uppercase"
-                    >SE</span
-                  >
-                  <br /><span class="text-xl font-normal text-black"
-                    >A great deal to love</span
-                  >
-                </h1>
-                <div
-                  class="flex justify-between mx-4 mb-4 text-xl text-blue-500 outline-offset-1"
-                >
-                  <a href="#" class="flex items-center mx-4 hover:underline">
-                    Learn more
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke-width="3"
-                      stroke="currentColor"
-                      class="w-4 h-4"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M8.25 4.5l7.5 7.5-7.5 7.5"
-                      />
-                    </svg>
-                  </a>
-                  <a href="#" class="flex items-center hover:underline">
-                    Buy
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke-width="3"
-                      stroke="currentColor"
-                      class="w-4 h-4"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M8.25 4.5l7.5 7.5-7.5 7.5"
-                      />
-                    </svg>
-                  </a>
-                </div>
-              </div>
-              <img
-                class="object-cover object-center w-full h-full"
-                src="https://www.apple.com/v/apple-watch-se/i/images/overview/hero/hero__fmx18j9bq0ya_small_2x.jpg"
                 alt="content"
               />
             </div>
